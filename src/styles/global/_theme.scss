@@ -1,0 +1,114 @@
+.card {
+    padding: 25px;
+    border-radius: 12px;
+    background: #FFF;
+    .headSec{
+        padding-bottom: 22px;
+        display: flex;
+        justify-content: space-between;
+        h3 {
+            color:#181D27;
+            font-size: 20px;
+            font-weight: 500;
+            &.main{
+                color: #0E121B;
+            }
+            span{
+                color: #335CFF;
+            }
+            .light{
+                color: #99A0AE;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.welcomeCard {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-self: stretch;
+    gap: 16px;
+    margin: 5px 0 15px;
+
+    &-user {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .profileImage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            width: 54px;
+            height: 54px;
+            padding: 4px;
+            aspect-ratio: 1/1;
+            border-radius: 99999px;
+            border: 1px solid var(--Gray-200_alpha, rgba(0, 0, 0, 0.08));
+            background: var(--Base-White, #FFF);
+            font-size: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 99999px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .detail {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+
+            h6 {
+                color: var(--Gray-900, #181D27);
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 1.5;
+            }
+
+            p {
+                overflow: hidden;
+                color: var(--Gray-600, #535862);
+                text-overflow: ellipsis;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.4;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                align-self: stretch;
+            }
+        }
+    }
+
+    &-more {
+        flex-shrink: 0;
+
+        &Btn {
+            display: flex;
+            border-radius: 2px;
+            padding: 4px;
+            color: #A4A7AE;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.5;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+
+            svg {
+                width: auto;
+                height: 1em;
+            }
+
+            &:hover {
+                background-color: #F5F5F5;
+            }
+        }
+    }
+}

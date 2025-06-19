@@ -1,0 +1,123 @@
+.leave-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.leave-card__top {
+  width: 100%;
+}
+.leave-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #E9EAEB;
+}
+.leave-card__title {
+  color: var(--Gray-900, #181D27);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.leave-card__dots {
+  color: #A4A7AE;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  padding: 3px 5px;
+  border-radius: 2px;
+}
+.leave-card__dots:hover {
+  background-color: #f9f9f9;
+}
+.leave-card__pie-wrap {
+  border-radius: 10px;
+  border: 1px solid #EEE;
+  background: #F5F5F5;
+  display: flex;
+  height: 191px;
+  padding: 17px 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+}
+.leave-card__pie-bg {
+  margin-top: 8px;
+}
+.leave-card__pie-label {
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.leave-card__dist-label {
+  width: 100%;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding-bottom: 40px;
+  padding-top: 26px;
+}
+.leave-card__dist {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.leave-card__dist-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.leave-card__dist-row {
+  position: relative;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.leave-card__dist-type {
+  overflow: hidden;
+  color: var(--text-strong-950, #0E121B);
+  text-overflow: ellipsis;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.132px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.leave-card__dist-amount {
+  color: #333;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.leave-card__bar-track {
+  width: 100%;
+  height: 7px;
+  border-radius: 4px;
+  background: #EFF2F6;
+  margin-top: 5px;
+  position: relative;
+}
+.leave-card__bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s;
+}
+
+@media (max-width: 450px) {
+  .leave-card {
+    padding: 11px 4vw 10px 4vw;
+    min-width: unset;
+    max-width: 99vw;
+  }
+}/*# sourceMappingURL=LeaveReportCard.css.map */

@@ -1,0 +1,134 @@
+.favorites-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &__top {
+        width: 100%;
+
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        color: var(--Gray-900, #181D27);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    &__dots {
+        color: #A4A7AE;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        padding: 3px 5px;
+        border-radius: 2px;
+
+        &:hover {
+            background-color: #f9f9f9;
+        }
+    }
+
+    &__list {
+        border-top: 2px solid #f4f4f5;
+        margin: 7px 0 0 0;
+        height: 340px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        padding: 15px 4px 13px 0;
+        border-bottom: 1px solid #efeff0;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        transition: box-shadow .13s,
+        border-color .13s;
+    }
+
+    &__avatar {
+        min-width: 46px;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 18px;
+        background: #f2f5f8;
+    }
+
+    &__info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        color: var(--Gray-900, #181D27);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    &__username {
+        color: var(--Gray-600, #535862);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+    &__likes {
+        width: 60px;
+        color: var(--Gray-600, #535862);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-right: 18px;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: #A4A7AE;
+
+        svg {
+            display: block;
+
+            width: 1em;
+            strokeWidth: 4px;
+        }
+    }
+
+    &__footer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 7px;
+    }
+
+    &__viewall {
+        color: #6941C6;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .favorites-card {
+        padding: 14px 7px 10px 7px;
+        min-width: 97vw;
+    }
+}

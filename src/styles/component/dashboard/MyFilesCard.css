@@ -1,0 +1,155 @@
+.myfiles-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.myfiles-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.myfiles-title {
+  color: var(--Gray-900, #181D27);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.myfiles-desc {
+  color: var(--Gray-600, #535862);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-right: 30px;
+}
+
+.myfiles-dots {
+  color: #A4A7AE;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  padding: 3px 5px;
+  border-radius: 2px;
+}
+.myfiles-dots:hover {
+  background-color: #f9f9f9;
+}
+
+.myfiles-tabs {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.myfiles-tabs span {
+  cursor: pointer;
+  padding: 0px 12px 12px;
+  color: var(--Gray-500, #717680);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+.myfiles-tabs span::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #717680;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: background-color 0.4s ease-in-out;
+  will-change: background-color;
+}
+.myfiles-tabs span.active {
+  color: #7F56D9;
+}
+.myfiles-tabs span.active::after {
+  height: 2px;
+  background-color: #7F56D9;
+}
+
+.myfiles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.myfiles-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.myfiles-file {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+.myfiles-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.myfiles-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.myfiles-filename {
+  color: var(--Gray-700, #414651);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.myfiles-size {
+  color: var(--Gray-600, #535862);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.myfiles-view {
+  color: var(--Base-White, #FFF);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: 8px;
+  border: 2px solid var(--Gradient-skeuemorphic-gradient-border, rgba(255, 255, 255, 0.12));
+  background: var(--Brand-600, #7F56D9);
+  box-shadow: 0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset, 0px -2px 0px 0px rgba(10, 13, 18, 0.05) inset, 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  display: flex;
+  padding: 10px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.myfiles-view:hover {
+  background: #6535b4;
+}
+
+@media (max-width: 450px) {
+  .myfiles-card {
+    padding: 13px 5vw 12px 5vw;
+    min-width: unset;
+    max-width: 99vw;
+  }
+}/*# sourceMappingURL=MyFilesCard.css.map */

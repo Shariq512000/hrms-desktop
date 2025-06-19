@@ -1,0 +1,2599 @@
+.custom-input {
+  display: flex;
+  flex-direction: column;
+}
+.custom-input label {
+  color: #0E121B;
+  font-size: 14px;
+  font-weight: 500;
+}
+.custom-input input {
+  padding: 8px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #525866;
+  font-size: 12px;
+  border-bottom: 1px solid #CACFD8;
+}
+.custom-input input:focus {
+  border-bottom-color: #9d4edd;
+}
+
+.theme-table {
+  width: 100%;
+}
+.theme-table thead tr td {
+  background-color: #F5F7FA;
+  padding: 8px 12px;
+}
+.theme-table thead tr td .cell-heading {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.theme-table thead tr td .cell-heading p {
+  color: #525866;
+  font-size: 14px;
+}
+.theme-table thead tr td .cell-heading span {
+  color: #525866;
+}
+.theme-table thead tr td:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.theme-table thead tr td:last-child {
+  border-radius: 0 8px 8px 0;
+}
+.theme-table tbody tr td {
+  padding: 6px 0;
+  border-bottom: 1px solid #E1E4EA;
+}
+.theme-table tbody tr td .cell-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px;
+  justify-content: center;
+}
+.theme-table tbody tr td .cell-content h6 {
+  color: #0E121B;
+  font-size: 14px;
+}
+.theme-table tbody tr td .cell-content h6 b {
+  font-weight: 500;
+}
+.theme-table tbody tr td .cell-content p {
+  color: #525866;
+  font-size: 12px;
+}
+.theme-table tbody tr td .cell-content p.des {
+  color: #000;
+  line-height: 1.33;
+}
+.theme-table tbody tr td.addMore-row {
+  border-bottom: none;
+}
+.theme-table tbody tr td.addMore-row .more-container {
+  padding: 13px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme-table tbody tr td.addMore-row .more-container .moreBtn {
+  border-radius: 8px;
+  border: 1px solid #D5D7DA;
+  background: #FAFAFA;
+  box-shadow: 0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset, 0px -2px 0px 0px rgba(10, 13, 18, 0.05) inset, 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #717680;
+  cursor: pointer;
+}
+
+.lockedInput {
+  border-bottom: 1px solid #CACFD8;
+  display: flex;
+  gap: 20px;
+}
+.lockedInput label {
+  color: #0E121B;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.lockedInput label span {
+  color: #99A0AE;
+}
+.lockedInput input {
+  flex: 1;
+  color: #525866;
+  font-size: 14px;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #99A0AE;
+  padding-top: 5px;
+}
+.lockedInput input:focus {
+  outline: none;
+}
+
+.ulh-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: transparent;
+}
+.ulh-table tbody .ulh-trow {
+  border-bottom: 1px solid #ececec;
+}
+.ulh-table tbody .ulh-trow:last-child {
+  border-bottom: none;
+}
+.ulh-table tbody td {
+  border-bottom: 1px solid #E1E4EA;
+}
+.ulh-table .ulh-col-date {
+  color: #0E121B;
+  font-size: 14px;
+  font-weight: 500;
+  text-wrap: nowrap;
+  padding: 20px;
+  min-width: 180px;
+}
+.ulh-table .ulh-col-main {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  min-width: 370px;
+  padding-bottom: 13px;
+  gap: 12px;
+}
+.ulh-table .ulh-col-main .titleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.ulh-table .ulh-col-main .ulh-col-main-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #E1E4EA;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+.ulh-table .ulh-col-main .ulh-col-main-title {
+  color: #0E121B;
+  font-size: 14px;
+  font-weight: 500;
+}
+.ulh-table .ulh-col-main .ulh-col-main-sub {
+  color: #525866;
+  font-size: 12px;
+}
+.ulh-table .ulh-col-desc {
+  color: #000;
+  font-size: 12px;
+  padding: 12px;
+  line-height: 1.33;
+}
+.ulh-table .ulh-col-actions {
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 17px;
+}
+.ulh-table .ulh-col-actions .actionBtn {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  color: #525866;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+.ulh-table .ulh-col-actions .actionBtn:hover {
+  background-color: #F5F5F5;
+}
+
+.countCard {
+  position: relative;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #E1E4E9;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+}
+.countCard .topSec {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #F5F5F5;
+}
+.countCard .topSec h6 {
+  color: #535862;
+  font-size: 20px;
+  font-weight: 600;
+}
+.countCard .topSec .logo {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid #D5D7DA;
+  background: #FFF;
+  color: #414651;
+}
+.countCard .topSec .logo svg {
+  width: 28px;
+  height: 28px;
+}
+.countCard .bottomSec {
+  padding-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.countCard .bottomSec .cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.countCard .bottomSec .cont h6 {
+  color: #181D27;
+  font-size: 16px;
+}
+.countCard .bottomSec .cont h6.value {
+  font-weight: 600;
+}
+.countCard .welcomeCard-more {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.workInfoCard .mainCont {
+  display: flex;
+  gap: 16px;
+}
+.workInfoCard .mainCont .subCont {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.overview-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.overview-feed .innerTab-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-radius: 12px;
+  background-color: #FFF;
+}
+.overview-feed .innerTab-card .innerTabs {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.overview-feed .innerTab-card .innerTabs .innerTab {
+  color: #525866;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 24px 0 22px 0;
+  cursor: pointer;
+  border-bottom: 2.5px solid transparent;
+}
+.overview-feed .innerTab-card .innerTabs .innerTab.active {
+  border-color: #335CFF;
+}
+
+.reminder-card.team-space-sec.replyPost {
+  padding: 15px;
+  border-radius: 5px;
+  background: #F5F5F5;
+}
+.reminder-card.team-space-sec .topSec {
+  padding-bottom: 15px;
+}
+.reminder-card.team-space-sec .topSec .userDetails .userData h6 {
+  color: #414651;
+}
+.reminder-card.team-space-sec .topSec .userDetails .userData p {
+  font-size: 12px;
+  color: #535862;
+}
+.reminder-card.team-space-sec .bodySec {
+  padding: 8px 12px;
+}
+.reminder-card.team-space-sec .bodySec p {
+  color: #181D27;
+  font-size: 16px;
+}
+.reminder-card.team-space-sec .reactions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+}
+.reminder-card.team-space-sec .reactions .react {
+  padding: 4px 8px;
+  border-radius: 16px;
+  border: 1px solid #E9EAEB;
+  background: #FAFAFA;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.reminder-card.team-space-sec .reactions .react img {
+  width: 16px;
+  height: 16px;
+}
+.reminder-card.team-space-sec .reactions .react .number-of-react {
+  color: #414651;
+  font-size: 14px;
+  font-weight: 500;
+}
+.reminder-card.team-space-sec .commentSection {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background: #F5F5F5;
+}
+.reminder-card.team-space-sec .commentSection .userProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  padding: 4px;
+  aspect-ratio: 1/1;
+  border-radius: 99999px;
+  border: 1px solid var(--Gray-200_alpha, rgba(0, 0, 0, 0.08)) --Gray-200_alpha is false;
+  font-size: 0;
+  position: relative;
+}
+.reminder-card.team-space-sec .commentSection .userProfile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 99999px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.reminder-card.team-space-sec .commentSection .userProfile .online {
+  border: 1px solid white;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  height: 10px;
+  width: 10px;
+  border-radius: 12px;
+  background-color: #17B26A;
+}
+.reminder-card.team-space-sec .commentSection .textField {
+  flex: 1;
+}
+.reminder-card.team-space-sec .commentSection .textField input {
+  border-radius: 8px;
+  border: 1px solid #D5D7DA;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  padding: 10px 14px;
+  font-size: 16px;
+  width: 100%;
+}
+.reminder-card.team-space-sec .commentSection .textField input::-moz-placeholder {
+  color: #717680;
+}
+.reminder-card.team-space-sec .commentSection .textField input::placeholder {
+  color: #717680;
+}
+.reminder-card.team-space-sec .commentSection .textField input:focus {
+  outline: none;
+}
+.reminder-card.team-space-sec .commentSection .send {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  background: #7F56D9;
+  box-shadow: 0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset, 0px -2px 0px 0px rgba(10, 13, 18, 0.05) inset, 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #D6BBFB;
+}
+.reminder-card .topSec {
+  display: flex;
+  justify-content: space-between;
+}
+.reminder-card .topSec .userDetails {
+  display: flex;
+  align-items: center;
+  margin-left: -5px;
+  gap: 12px;
+}
+.reminder-card .topSec .userDetails .userProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  padding: 4px;
+  aspect-ratio: 1/1;
+  border-radius: 99999px;
+  border: 1px solid var(--Gray-200_alpha, rgba(0, 0, 0, 0.08)) --Gray-200_alpha is false;
+  font-size: 0;
+  position: relative;
+}
+.reminder-card .topSec .userDetails .userProfile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 99999px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.reminder-card .topSec .userDetails .userProfile .online {
+  border: 1px solid white;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  height: 10px;
+  width: 10px;
+  border-radius: 12px;
+  background-color: #17B26A;
+}
+.reminder-card .topSec .userDetails .userData {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+.reminder-card .topSec .userDetails .userData h6 {
+  color: #0E121B;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.reminder-card .topSec .userDetails .userData h6 u {
+  text-decoration: underline;
+}
+.reminder-card .topSec .userDetails .userData h6 .name {
+  color: #335CFF;
+}
+.reminder-card .topSec .userDetails .userData p {
+  color: #525866;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.reminder-card .bodySec {
+  padding: 12px 0;
+}
+.reminder-card .bodySec p {
+  color: #535862;
+  font-size: 14px;
+}
+.reminder-card .bodySec p .mention {
+  text-decoration: underline;
+}
+.reminder-card .bodySec textarea {
+  font-family: Inter;
+  margin: 12px 0;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #E9EAEB;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  color: #181D27;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100%;
+  height: 96px;
+}
+.reminder-card .bodySec textarea:focus {
+  outline: none;
+}
+.reminder-card .bodySec .replySec {
+  margin: 12px 0;
+  padding: 15px;
+  border-radius: 15px;
+  background: #F5F5F5;
+}
+.reminder-card .bodySec .replySec .topSec {
+  align-items: center;
+}
+.reminder-card .bodySec .replySec .topSec .userData {
+  gap: 5px;
+}
+.reminder-card .bodySec .replySec .topSec .welcomeCard-more .welcomeCard-moreBtn {
+  color: #FB3748;
+}
+.reminder-card .bodySec .replySec .bottomSec {
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reminder-card .bodySec .replySec .bottomSec .date {
+  color: #000;
+  font-size: 12px;
+}
+.reminder-card .bodySec .replySec .bottomSec .reply {
+  cursor: pointer;
+  overflow: hidden;
+  color: #535862;
+  font-size: 14px;
+}
+.reminder-card .bottomSec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reminder-card .bottomSec .btnGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.reminder-card .bottomSec .btnGroup .redBtn {
+  color: #FB3748;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 8px;
+  background-color: #FFEBEC;
+  border-radius: 999px;
+}
+.reminder-card .bottomSec .btnGroup .orangeBtn {
+  color: #FF8447;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 8px;
+  background-color: #FFF1EB;
+  border-radius: 999px;
+}
+.reminder-card .bottomSec .dateGroup {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.reminder-card .bottomSec .dateGroup span {
+  color: #99A0AE;
+}
+.reminder-card .bottomSec .dateGroup p {
+  color: #99A0AE;
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+.employeeCard {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #E9EAEB;
+  background: #FFF;
+}
+.employeeCard .topSec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.employeeCard .topSec .userFullDetail {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.employeeCard .topSec .userProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  position: relative;
+}
+.employeeCard .topSec .userProfile img {
+  width: 56px;
+  height: 56px;
+  border-radius: 99999px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.employeeCard .topSec .userProfile .online {
+  border: 1px solid white;
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: #17B26A;
+}
+.employeeCard .topSec .userData {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.employeeCard .topSec .userData h6 {
+  color: #181D27;
+  font-size: 18px;
+  font-weight: 600;
+}
+.employeeCard .topSec .userData p {
+  color: #535862;
+  font-size: 16px;
+}
+.employeeCard .topSec .userData span {
+  color: #D02533;
+  font-size: 16px;
+}
+.employeeCard .topSec .iconGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  color: #000;
+}
+.employeeCard .bottomSec {
+  padding-top: 16px;
+  border-top: 1px solid #E1E4EA;
+}
+.employeeCard .bottomSec h6 {
+  color: #000;
+  font-size: 18px;
+}
+.employeeCard .bottomSec h6 b {
+  font-weight: 500;
+}
+
+.profilePage {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.profilePage .userDetailCard {
+  display: flex;
+  justify-content: space-between;
+}
+.profilePage .userDetailCard .userDetailCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 26px);
+}
+.profilePage .userDetailCard .userDetailCont .detailColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 33.33%;
+}
+.profilePage .userDetailCard .userDetailCont .detailColumn .detailSec {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.profilePage .userDetailCard .userDetailCont .detailColumn .detailSec .detailIcon {
+  color: #000000;
+}
+.profilePage .userDetailCard .userDetailCont .detailColumn .detailSec .detailData {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+.profilePage .userDetailCard .userDetailCont .detailColumn .detailSec .detailData h6 {
+  color: #0E121B;
+  font-size: 14px;
+  font-weight: 500;
+}
+.profilePage .userDetailCard .userDetailCont .detailColumn .detailSec .detailData p {
+  color: #525866;
+  font-size: 14px;
+}
+.profilePage .aboutCard {
+  display: flex;
+  justify-content: space-between;
+}
+.profilePage .aboutCard .about-content {
+  width: calc(100% - 26px);
+}
+.profilePage .aboutCard .about-content h6 {
+  color: #181D27;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+.profilePage .aboutCard .about-content p {
+  color: #535862;
+  font-size: 14px;
+  line-height: 1.42;
+}
+.profilePage .skillsCard .skill-content .skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.profilePage .skillsCard .skill-content .skill-card {
+  border-radius: 12px;
+  border: 1px solid #E9EAEB;
+  background: #FFF;
+  padding: 16px;
+}
+.profilePage .skillsCard .skill-content .skill-card .skill-name {
+  color: #414651;
+  font-size: 14px;
+  font-weight: 500;
+}
+.profilePage .skillsCard .skill-content .skill-card .progress-wrapper {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.profilePage .skillsCard .skill-content .skill-card .progress-wrapper .progress-bar {
+  flex: 1;
+  position: relative;
+  height: 8px;
+  background: #E9EAEB;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 440px;
+}
+.profilePage .skillsCard .skill-content .skill-card .progress-wrapper .progress-bar .progress {
+  height: 100%;
+  background: #7F56D9;
+  border-radius: 4px;
+}
+.profilePage .skillsCard .skill-content .skill-card .progress-wrapper .percentage {
+  color: #414651;
+  font-size: 14px;
+  font-weight: 500;
+}
+.profilePage .tagCard .tag-content .tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.profilePage .tagCard .tag-content .tag-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 6px 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #D5D7DA;
+  background: #FFF;
+  color: #414651;
+  font-size: 14px;
+  font-weight: 500;
+}
+.profilePage .tagCard .tag-content .tag-chip .remove-btn {
+  cursor: pointer;
+  color: #A4A7AE;
+  width: 16px;
+  height: 16px;
+}
+.profilePage .basicInfoCard .basicInfo-content .info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.profilePage .basicInfoCard .basicInfo-content .info-grid .info-item.wide {
+  grid-column: span 2;
+}
+.profilePage .workInfoCard .workInfo-content .info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.profilePage .workInfoCard .workInfo-content .info-grid .info-item.wide {
+  grid-column: span 2;
+}
+
+.approvalPage .approvalCard .approvals-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 43px;
+       column-gap: 43px;
+  row-gap: 15px;
+}
+.approvalPage .approvalCard .approval-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  width: 100%;
+  border-bottom: 1px solid #E9EAEB;
+}
+.approvalPage .approvalCard .approval-card .main-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.approvalPage .approvalCard .approval-checkbox input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+  accent-color: #246dff;
+  margin-top: 2px;
+}
+.approvalPage .approvalCard .approval-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+.approvalPage .approvalCard .approval-info .avatar {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.approvalPage .approvalCard .approval-info .approval-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.approvalPage .approvalCard .approval-info .approval-details p {
+  font-size: 14px;
+}
+.approvalPage .approvalCard .approval-info .approval-details p.user {
+  color: #181D27;
+  font-weight: 500;
+}
+.approvalPage .approvalCard .approval-info .approval-details p.user span {
+  color: #535862;
+}
+.approvalPage .approvalCard .approval-info .approval-details p.request {
+  color: #535862;
+}
+.approvalPage .approvalCard .approval-date {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.approvalPage .approvalCard .approval-date .raised-label {
+  font-size: 14px;
+  color: #181D27;
+  font-weight: 500;
+}
+.approvalPage .approvalCard .approval-date .date {
+  font-size: 14px;
+  color: #535862;
+}
+@media (max-width: 800px) {
+  .approvalPage .approvalCard .approvals-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.leaveTabPage {
+  background-color: #FFF;
+  border-radius: 12px;
+  overflow-x: hidden;
+}
+.leaveTabPage .headTab {
+  padding: 0 22px;
+  border-top: 1px solid #E1E4EA;
+  border-bottom: 1px solid #E1E4EA;
+}
+.leaveTabPage .headTab .leaveTabs {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.leaveTabPage .headTab .leaveTabs .leaveTab {
+  position: relative;
+  color: #525866;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 15px 0;
+}
+.leaveTabPage .headTab .leaveTabs .leaveTab::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+}
+.leaveTabPage .headTab .leaveTabs .leaveTab.active {
+  color: #0E121B;
+}
+.leaveTabPage .headTab .leaveTabs .leaveTab.active::after {
+  background-color: #335CFF;
+}
+.leaveTabPage .leaveTabBody {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+.leaveTabPage .leaveTabBody .heading {
+  color: #0E121B;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card {
+  padding: 16px 20px;
+  border-radius: 5px;
+  border: 1px solid #E9EAEB;
+  display: flex;
+  align-items: center;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardLeftSec {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 70%;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardLeftSec .logoSec {
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardLeftSec .logoSec.red {
+  background: rgba(251, 55, 72, 0.1);
+  color: #D02533;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardLeftSec .logoSec.green {
+  background: #1FC16B;
+  color: #C2F5DA;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardLeftSec .logoSec.blue {
+  background: #335CFF;
+  color: #C2F5DA;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardLeftSec .logoSec.sky {
+  background: #22D3BB;
+  color: #0B4627;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardLeftSec .logoSec.pink {
+  background: #FB4BA3;
+  color: #FFC0C5;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardLeftSec .content {
+  color: #181D27;
+  font-size: 14px;
+  font-weight: 600;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardRightSec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardRightSec .detailSec {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardRightSec .detailSec .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardRightSec .detailSec .detail h6 {
+  color: #181D27;
+  font-size: 14px;
+  font-weight: 500;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardRightSec .detailSec .detail p {
+  color: #535862;
+  font-size: 14px;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardRightSec .detailSec .detail p span {
+  color: #27A54C;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardRightSec .buttonSec {
+  padding-right: 6px;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardRightSec .buttonSec .applyBtn {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: #335CFF;
+  transition: all 0.4s ease-in-out;
+}
+.leaveTabPage .leaveTabBody .topSec .topSec-cardContainer .topSec-card .cardRightSec .buttonSec .applyBtn:hover {
+  opacity: 0.8;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #E9EAEB;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .cardHeading {
+  color: #535862;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .innerCard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .innerCard-container .innerCard {
+  display: flex;
+  align-items: center;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .innerCard-container .innerCard .leftSec {
+  width: 82%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FAFAFA;
+  padding: 8px;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .innerCard-container .innerCard .leftSec .userDetail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .innerCard-container .innerCard .leftSec .userDetail .profile {
+  position: relative;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .innerCard-container .innerCard .leftSec .userDetail .profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .innerCard-container .innerCard .leftSec .userDetail .profile .active {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid #FFF;
+  background: #17B26A;
+  bottom: 5px;
+  right: 5px;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .innerCard-container .innerCard .leftSec .userDetail .data {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .innerCard-container .innerCard .leftSec .userDetail .data h6 {
+  color: #181D27;
+  font-size: 14px;
+  font-weight: 600;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .innerCard-container .innerCard .leftSec .userDetail .data p {
+  color: #535862;
+  font-size: 14px;
+  font-weight: 400;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .innerCard-container .innerCard .leftSec .settings {
+  color: #A4A7AE;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .innerCard-container .innerCard .rightSec {
+  padding-left: 30px;
+  width: 18%;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .innerCard-container .innerCard .rightSec .btnGroup {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: flex-end;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .innerCard-container .innerCard .rightSec .btnGroup .innerCardBtn {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: #335CFF;
+  transition: all 0.4s ease-in-out;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .innerCard-container .innerCard .rightSec .btnGroup .innerCardBtn.disAppBtn {
+  background: #FB3748;
+}
+.leaveTabPage .leaveTabBody .bottomSec .bottomSec-cardContainer .bottomSec-card .innerCard-container .innerCard .rightSec .btnGroup .innerCardBtn:hover {
+  opacity: 0.8;
+}
+
+.attendanceTabPage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.attendanceTabPage .myLeavesCard .myleaves__content {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.attendanceTabPage .myLeavesCard .myleaves__row {
+  display: flex;
+  align-items: stretch;
+  min-height: 62px;
+}
+.attendanceTabPage .myLeavesCard .myleaves__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 25px;
+  gap: 8px;
+  justify-content: center;
+  background: #FDFDFD;
+}
+.attendanceTabPage .myLeavesCard .myleaves__date .myleaves__day {
+  color: #717680;
+  font-size: 12px;
+  font-weight: 500;
+}
+.attendanceTabPage .myLeavesCard .myleaves__date .myleaves__num {
+  color: #717680;
+  font-size: 12px;
+  font-weight: 700;
+}
+.attendanceTabPage .myLeavesCard .myleaves__details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  border-left: 3px solid #335CFF;
+  background: #F5F7FA;
+}
+.attendanceTabPage .myLeavesCard .myleaves__details .myleaves__leave-type {
+  color: #414651;
+  font-size: 12px;
+  font-weight: 600;
+}
+.attendanceTabPage .myLeavesCard .myleaves__details .myleaves__leave-time {
+  color: #414651;
+  font-size: 12px;
+  font-weight: 400;
+}
+.attendanceTabPage .myLeavesCard .myleaves__status {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #414651;
+  background: #fff;
+  font-size: 12px;
+  border: 1px solid #E9EAEB;
+  font-weight: 600;
+}
+.attendanceTabPage .myLeavesCard .myleaves__action {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #E9EAEB;
+  border-left: none;
+}
+.attendanceTabPage .myLeavesCard .myleaves__action .myleaves__btn {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #D5D7DA;
+  background: #FFF;
+  color: #414651;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.attendanceTabPage .myLeavesCard .myleaves__action .myleaves__btn:hover {
+  background: #F5F7FA;
+}
+.attendanceTabPage .teamLeaveCard .cardBodySec {
+  display: grid;
+  row-gap: 17px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.attendanceTabPage .teamLeaveCard .cardBodySec .teamCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 5px;
+  background: #F5F7FA;
+}
+.attendanceTabPage .teamLeaveCard .cardBodySec .teamCard .cardLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.attendanceTabPage .teamLeaveCard .cardBodySec .teamCard .cardLeft .profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #E1E4EA;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #525866;
+}
+.attendanceTabPage .teamLeaveCard .cardBodySec .teamCard .cardLeft .data {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.attendanceTabPage .teamLeaveCard .cardBodySec .teamCard .cardLeft .data h6 {
+  color: #0E121B;
+  font-size: 14px;
+  font-weight: 500;
+}
+.attendanceTabPage .teamLeaveCard .cardBodySec .teamCard .cardLeft .data p {
+  color: #525866;
+  font-size: 12px;
+  font-weight: 400;
+}
+.attendanceTabPage .teamLeaveCard .cardBodySec .teamCard .cardRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-right: 8px;
+}
+.attendanceTabPage .teamLeaveCard .cardBodySec .teamCard .cardRight p {
+  color: #0E121B;
+  font-size: 14px;
+  font-weight: 500;
+}
+.attendanceTabPage .teamLeaveCard .cardBodySec .teamCard .cardRight p span {
+  color: #525866;
+  font-size: 12px;
+}
+.attendanceTabPage .teamLeaveCard .cardBodySec .teamCard .cardRight .opt {
+  color: #A4A7AE;
+}
+
+.jobTabPage .jobCardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.jobTabPage .jobCardContainer .jobCard {
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  border: 1px solid #E9EAEB;
+  background: #FFF;
+}
+.jobTabPage .jobCardContainer .jobCard .cardLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.jobTabPage .jobCardContainer .jobCard .cardLeft h6 {
+  color: #181D27;
+  font-size: 14px;
+  font-weight: 500;
+}
+.jobTabPage .jobCardContainer .jobCard .cardLeft p {
+  color: #535862;
+  font-size: 14px;
+}
+.jobTabPage .jobCardContainer .jobCard .cardRight {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.jobTabPage .jobCardContainer .jobCard .cardRight .detailSec {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.jobTabPage .jobCardContainer .jobCard .cardRight .detailSec .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.jobTabPage .jobCardContainer .jobCard .cardRight .detailSec .detail p {
+  color: #535862;
+  font-size: 14px;
+  font-weight: 400;
+}
+.jobTabPage .jobCardContainer .jobCard .cardRight .detailSec .detail h6 {
+  color: #181D27;
+  font-size: 14px;
+  font-weight: 500;
+}
+.jobTabPage .jobCardContainer .jobCard .cardRight .statusSec .statusBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #E1E4E9;
+  background-color: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.jobTabPage .jobCardContainer .jobCard .cardRight .statusSec .statusBtn span {
+  color: #4E5BA6;
+}
+.jobTabPage .jobCardContainer .jobCard .cardRight .statusSec .statusBtn p {
+  color: #414651;
+  font-size: 14px;
+  font-weight: 500;
+}
+.jobTabPage .jobCardContainer .jobCard .cardRight .statusSec .statusBtn:hover {
+  background-color: #414651;
+}
+.jobTabPage .jobCardContainer .jobCard .cardRight .statusSec .statusBtn:hover span {
+  color: #FFF;
+}
+.jobTabPage .jobCardContainer .jobCard .cardRight .statusSec .statusBtn:hover p {
+  color: #FFF;
+}
+
+.fileTabPage {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.fileTabPage .uploaderCard .uploadCardBody {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 24px;
+  border-radius: 12px;
+  border: 1px solid #E9EAEB;
+  background: #FAFAFA;
+}
+.fileTabPage .uploaderCard .uploadCardBody input {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.fileTabPage .uploaderCard .uploadCardBody .logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #D5D7DA;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset, 0px -2px 0px 0px rgba(10, 13, 18, 0.05) inset, 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  color: #535862;
+}
+.fileTabPage .uploaderCard .uploadCardBody .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.fileTabPage .uploaderCard .uploadCardBody .content h6 {
+  color: #A4A7AE;
+  font-size: 14px;
+  font-weight: 600;
+}
+.fileTabPage .uploaderCard .uploadCardBody .content h6 span {
+  color: #535862;
+  font-weight: 400;
+}
+.fileTabPage .uploaderCard .uploadCardBody .content p {
+  color: #535862;
+  font-size: 12px;
+  font-weight: 400;
+}
+.fileTabPage .fileCard .innerCardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.fileTabPage .fileCard .innerCardContainer .innerFileCard {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #E9EAEB;
+  background: #FFF;
+  position: relative;
+}
+.fileTabPage .fileCard .innerCardContainer .innerFileCard .file-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.fileTabPage .fileCard .innerCardContainer .innerFileCard .file-content .file-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.fileTabPage .fileCard .innerCardContainer .innerFileCard .file-content .file-detail h6 {
+  color: #414651;
+  font-size: 14px;
+  font-weight: 500;
+}
+.fileTabPage .fileCard .innerCardContainer .innerFileCard .file-content .file-detail p {
+  color: #535862;
+  font-size: 14px;
+}
+.fileTabPage .fileCard .innerCardContainer .innerFileCard .file-content .file-detail p span {
+  color: #079455;
+  font-size: 14px;
+  font-weight: 500;
+  border-left: 1px solid #D5D7DA;
+  padding-left: 3px;
+}
+.fileTabPage .fileCard .innerCardContainer .innerFileCard .file-content .progress-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.fileTabPage .fileCard .innerCardContainer .innerFileCard .file-content .progress-container .progress-bar {
+  flex: 1;
+  height: 8px;
+  border-radius: 4px;
+  background: #E9EAEB;
+  position: relative;
+  overflow: hidden;
+}
+.fileTabPage .fileCard .innerCardContainer .innerFileCard .file-content .progress-container .progress-bar .completed {
+  position: absolute;
+  background-color: #7F56D9;
+  height: 100%;
+  height: 8px;
+  left: 0;
+  top: 0;
+}
+.fileTabPage .fileCard .innerCardContainer .innerFileCard .file-content .progress-container .progress-number {
+  color: #414651;
+  font-size: 14px;
+  font-weight: 500;
+}
+.fileTabPage .fileCard .innerCardContainer .innerFileCard .deleteBtn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #A4A7AE;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.fileTabPage .fileCard .innerCardContainer .innerFileCard .deleteBtn:hover {
+  background: #f5f5f5;
+}
+
+.hrProcessPage .hrRequest {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hrProcessPage .hrRequest .hrRequestHead {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.hrProcessPage .hrRequest .hrRequestHead h4 {
+  color: #0E121B;
+  font-size: 20px;
+  font-weight: 500;
+}
+.hrProcessPage .hrRequest .hrRequestHead p {
+  color: #0E121B;
+  font-size: 14px;
+}
+.hrProcessPage .hrRequest .hrRequestBody {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.hrProcessPage .hrRequest .hrRequestBody .bodyBtn {
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border-left: 4px solid #335CFF;
+  background: #FFF;
+  box-shadow: 0px 0px 3.4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease-in-out;
+}
+.hrProcessPage .hrRequest .hrRequestBody .bodyBtn.blue {
+  border-color: #335CFF;
+}
+.hrProcessPage .hrRequest .hrRequestBody .bodyBtn.green {
+  border-color: #1FC16B;
+}
+.hrProcessPage .hrRequest .hrRequestBody .bodyBtn.orange {
+  border-color: #E97135;
+}
+.hrProcessPage .hrRequest .hrRequestBody .bodyBtn:hover {
+  border-color: transparent;
+}
+.hrProcessPage .hrRequest .hrRequestBody .bodyBtn p {
+  color: #222530;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.careerTabPage {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.careerTabPage .exprienceCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.careerTabPage .exprienceCard .exprienceCont {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.careerTabPage .exprienceCard .exprienceCont h6 {
+  color: #0E121B;
+  font-size: 20px;
+  font-weight: 500;
+}
+.careerTabPage .exprienceCard .exprienceCont p {
+  color: #0E121B;
+  font-size: 14px;
+}
+.careerTabPage .exprienceCard .exprienceCont.center {
+  align-items: center;
+}
+.careerTabPage .exprienceCard .exprienceCont.right {
+  align-items: flex-end;
+}
+.careerTabPage .timeLineCard .timeline-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec .year {
+  font-size: 20px;
+  font-weight: 500;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec .timeLineInnerCard {
+  display: flex;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec .timeLineInnerCard .eventDate {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+  padding: 10px;
+  border-right: 1px solid #E9EAEB;
+  background: #F5F5F5;
+  min-width: 75px;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec .timeLineInnerCard .eventDate h6 {
+  color: #0E121B;
+  font-size: 16px;
+  font-weight: 500;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec .timeLineInnerCard .eventDate p {
+  color: #717680;
+  font-size: 12px;
+  font-weight: 500;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec .timeLineInnerCard .eventDetail {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 17px;
+  border: 1px solid #E9EAEB;
+  background: #FFECC0;
+  flex-grow: 1;
+  position: relative;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec .timeLineInnerCard .eventDetail.multiline {
+  align-items: flex-start;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec .timeLineInnerCard .eventDetail .seprator {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec .timeLineInnerCard .eventDetail .logo {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #FFFAEB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F6B51E;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec .timeLineInnerCard .eventDetail h6 {
+  color: #414651;
+  font-size: 12px;
+  font-weight: 600;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec .timeLineInnerCard .eventDetail .row-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec .timeLineInnerCard .eventDetail .row-wrapper .listRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec .timeLineInnerCard .eventDetail .row-wrapper .listRow .leftSec {
+  width: 200px;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec .timeLineInnerCard .eventDetail .row-wrapper .listRow .leftSec h6 {
+  color: #414651;
+  font-size: 12px;
+  font-weight: 600;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec .timeLineInnerCard .eventDetail .row-wrapper .listRow .rightSec p {
+  color: #333;
+  font-size: 12px;
+  font-weight: 500;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec.organization .timeLineInnerCard .eventDate {
+  background: #525866;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec.organization .timeLineInnerCard .eventDate h6 {
+  color: #FFF;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec.organization .timeLineInnerCard .eventDate p {
+  color: #FFF;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec.organization .timeLineInnerCard .eventDetail {
+  background: #EEE;
+}
+.careerTabPage .timeLineCard .timeline-wrapper .timelineSec.organization .timeLineInnerCard .eventDetail .logo {
+  background: rgba(153, 160, 174, 0.16);
+  color: #000000;
+}
+
+.customDropdown select {
+  padding: 12px;
+  color: #414651;
+  font-size: 16px;
+  font-weight: 600;
+  width: 300px;
+  border-radius: 6px;
+  background: #FFF;
+  border: none;
+}
+
+.teamSpaceDashboard .teamSpaceDashboard-body {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .postFilter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .postFilter .users {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 2px;
+  padding-right: 12px;
+  border-radius: 999px;
+  border: 1px solid #E1E4EA;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .postFilter .users .avatarGroup {
+  display: flex;
+  align-items: center;
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .postFilter .users .avatarGroup .avatar {
+  margin-left: -5px;
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .postFilter .users .avatarGroup .avatar:first-child {
+  margin-left: 0;
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .postFilter .users .avatarGroup .avatar img {
+  border: 2px solid white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .postFilter .users p {
+  color: #525866;
+  font-size: 16px;
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .createPostCard {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #E9EAEB;
+  background: #FFF;
+  position: relative;
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .createPostCard .createSec {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .createPostCard .createSec .profile {
+  padding: 6px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 24px 48px -12px rgba(10, 13, 18, 0.18), 0px 4px 4px -2px rgba(10, 13, 18, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .createPostCard .createSec .profile img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .createPostCard .createSec .textField {
+  flex: 1;
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .createPostCard .createSec .textField input {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  width: calc(100% - 20px);
+  padding: 12px 0;
+  border: none;
+  background: none;
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .createPostCard .createSec .textField input::-moz-placeholder {
+  color: #D9D9D9;
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .createPostCard .createSec .textField input::placeholder {
+  color: #D9D9D9;
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .createPostCard .createSec .textField input:focus {
+  outline: none;
+}
+.teamSpaceDashboard .teamSpaceDashboard-body .createPostCard .moreBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #717680;
+}
+
+.teamDepartTabPage {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.teamDepartTabPage .filterSec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.teamDepartTabPage .filterSec .leftSec {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.teamDepartTabPage .filterSec .leftSec .dropDown select {
+  padding: 12px;
+  min-width: 345px;
+  border-radius: 6px;
+  border: 1px solid #CACFD8;
+  background: #FFF;
+  color: #414651;
+  font-size: 16px;
+  font-weight: 600;
+}
+.teamDepartTabPage .filterSec .rightSec {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+}
+.teamDepartTabPage .filterSec .rightSec h6 {
+  color: #0E121B;
+  font-size: 20px;
+  font-weight: 500;
+}
+.teamDepartTabPage .filterSec .rightSec p {
+  color: #0E121B;
+  font-size: 14px;
+}
+.teamDepartTabPage .detailSec {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.teamDepartTabPage .detailSec .managementCard {
+  padding: 30px;
+  border-radius: 15px;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.teamDepartTabPage .detailSec .managementCard .headSec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.teamDepartTabPage .detailSec .managementCard .headSec h6 {
+  color: #181D27;
+  font-size: 24px;
+  font-weight: 600;
+}
+.teamDepartTabPage .detailSec .managementCard .headSec .value {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  background: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teamDepartTabPage .detailSec .managementCard .headSec .value span {
+  color: #0E121B;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.peersTabPage {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.peersTabPage .upparSec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.peersTabPage .upparSec .leftSec {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.peersTabPage .upparSec .leftSec .userProfile {
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 200px;
+  border: 2px solid #FFF;
+  background: #D6CFB7;
+  box-shadow: 0px 2px 1.9px 0px rgba(0, 0, 0, 0.25);
+}
+.peersTabPage .upparSec .leftSec .userProfile img {
+  width: 100%;
+  height: 100%;
+}
+.peersTabPage .upparSec .leftSec .userName {
+  color: #181D27;
+  font-size: 14px;
+  font-weight: 500;
+}
+.peersTabPage .upparSec .rightSec .memberBtn {
+  padding: 14px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  background: #7F56D9;
+}
+.peersTabPage .upparSec .rightSec .memberBtn span {
+  color: #FFF;
+  font-size: 16px;
+}
+.peersTabPage .mainContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.leaveTeamTabPage {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.leaveTeamTabPage .upparSec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.leaveTeamTabPage .upparSec .leftSec {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.leaveTeamTabPage .upparSec .leftSec .userName {
+  color: #181D27;
+  font-size: 14px;
+  font-weight: 500;
+}
+.leaveTeamTabPage .upparSec .rightSec {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.leaveTeamTabPage .upparSec .rightSec .iconBtn {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid #D5D7DA;
+  background: #FFF;
+  color: #414651;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.leaveTeamTabPage .upparSec .rightSec .iconBtn:hover {
+  background: #f5f5f5;
+}
+.leaveTeamTabPage .upparSec .rightSec .iconBtn svg {
+  width: 28px;
+  height: 28px;
+}
+.leaveTeamTabPage .upparSec .rightSec .memberBtn {
+  padding: 14px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  background: #7F56D9;
+  cursor: pointer;
+}
+.leaveTeamTabPage .upparSec .rightSec .memberBtn.applyBtn {
+  background: #335CFF;
+}
+.leaveTeamTabPage .upparSec .rightSec .memberBtn span {
+  color: #FFF;
+  font-size: 16px;
+}
+.leaveTeamTabPage .leaveCountSec {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.leaveTeamTabPage .pastLeave .pastCard .pastTable {
+  width: 100%;
+}
+.leaveTeamTabPage .pastLeave .pastCard .pastTable td {
+  padding-bottom: 24px !important;
+  padding-top: 24px !important;
+  border-bottom: 1px solid #E1E4EA;
+}
+.leaveTeamTabPage .pastLeave .pastCard .pastTable .holiday {
+  color: #0E121B;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+  min-width: 180px;
+}
+.leaveTeamTabPage .pastLeave .pastCard .pastTable .reason {
+  color: #000;
+  font-size: 12px;
+  min-width: 700px;
+}
+.leaveTeamTabPage .pastLeave .pastCard .pastTable .status .statusBadge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 6px;
+  border: 1px solid #E1E4EA;
+  background: #FFF;
+  padding: 4px;
+  padding-right: 8px;
+}
+.leaveTeamTabPage .pastLeave .pastCard .pastTable .status .statusBadge .logo {
+  color: #1FC16B;
+  font-size: 0;
+}
+.leaveTeamTabPage .pastLeave .pastCard .pastTable .status .statusBadge p {
+  color: #525866;
+  font-size: 12px;
+  font-weight: 500;
+}
+.leaveTeamTabPage .pastLeave .pastCard .pastTable .ulh-col-main {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  min-width: 600px;
+  padding-bottom: 13px;
+  gap: 12px;
+}
+.leaveTeamTabPage .pastLeave .pastCard .pastTable .ulh-col-main .titleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.leaveTeamTabPage .pastLeave .pastCard .pastTable .ulh-col-main .ulh-col-main-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #E0FAEC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2EB67D;
+}
+.leaveTeamTabPage .pastLeave .pastCard .pastTable .ulh-col-main .ulh-col-main-title {
+  color: #0E121B;
+  font-size: 14px;
+  font-weight: 500;
+}
+.leaveTeamTabPage .pastLeave .pastCard .pastTable .ulh-col-main .ulh-col-main-sub {
+  color: #525866;
+  font-size: 12px;
+}
+.leaveTeamTabPage .requestCard {
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #E1E4EA;
+  background: #FFF;
+}
+.leaveTeamTabPage .requestCard .leave-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.leaveTeamTabPage .requestCard .leave-table thead tr {
+  background: #F5F7FA;
+}
+.leaveTeamTabPage .requestCard .leave-table thead th {
+  text-align: left;
+  padding: 10px 12px;
+  border: none;
+  background: #F5F7FA;
+  white-space: nowrap;
+  color: #525866;
+  font-size: 14px;
+}
+.leaveTeamTabPage .requestCard .leave-table thead th .tableHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.leaveTeamTabPage .requestCard .leave-table thead th .leave-table-sort {
+  color: #525866;
+}
+.leaveTeamTabPage .requestCard .leave-table tbody tr {
+  border-bottom: 1px solid #ececec;
+  background: #fff;
+}
+.leaveTeamTabPage .requestCard .leave-table tbody td {
+  color: #0E121B;
+  font-size: 14px;
+  padding: 22px 12px;
+  border-bottom: 1px solid #E1E4EA;
+}
+.leaveTeamTabPage .requestCard .leave-table tbody td.nameCell {
+  font-weight: 500;
+}
+.leaveTeamTabPage .requestCard .leave-table input[type=checkbox] {
+  accent-color: #466dcc;
+}
+.leaveTeamTabPage .requestCard .leave-table-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+}
+.leaveTeamTabPage .requestCard .leave-table-footer .leave-table-footer-left {
+  color: #525866;
+  font-size: 14px;
+}
+.leaveTeamTabPage .requestCard .leave-table-footer .leave-table-pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.leaveTeamTabPage .requestCard .leave-table-footer .leave-table-pg-btn {
+  min-width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid #E1E4EA;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #525866;
+  font-size: 14px;
+  font-weight: 500;
+}
+.leaveTeamTabPage .requestCard .leave-table-footer .leave-table-pg-btn.arrow {
+  border-color: transparent;
+}
+.leaveTeamTabPage .requestCard .leave-table-footer .leave-table-pg-btn:hover, .leaveTeamTabPage .requestCard .leave-table-footer .leave-table-pg-btn.leave-table-pg-btn--active {
+  background: #F5F7FA;
+  border-color: transparent;
+}
+.leaveTeamTabPage .requestCard .leave-table-footer .leave-table-ellipsis {
+  padding: 0 6px;
+  color: #b4b4b4;
+  font-size: 16px;
+}
+.leaveTeamTabPage .requestCard .leave-table-footer .leave-table-footer-select {
+  min-width: 100px;
+  padding: 6px 10px;
+  color: #525866;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #E1E4EA;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+}
+.leaveTeamTabPage .timeline-card {
+  overflow-x: auto;
+}
+.leaveTeamTabPage .timeline-card .timelineTable {
+  width: 2880px;
+}
+.leaveTeamTabPage .timeline-card .timelineTable thead th {
+  color: #FFF;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  border-right: 1px solid #FFF;
+  border-left: 1px solid #FFF;
+  background: #333;
+  padding: 14px;
+  width: 120px;
+  text-wrap: nowrap;
+}
+.leaveTeamTabPage .timeline-card .timelineTable thead th:first-child {
+  border-left: none;
+}
+.leaveTeamTabPage .timeline-card .timelineTable tbody tr {
+  position: relative;
+}
+.leaveTeamTabPage .timeline-card .timelineTable tbody tr.active td {
+  background: #FFF7E5;
+}
+.leaveTeamTabPage .timeline-card .timelineTable tbody tr td {
+  border-bottom: 1px solid #D5D7DA;
+  border-top: 1px solid #D5D7DA;
+  background: #FFF;
+  padding: 23px 0;
+}
+.leaveTeamTabPage .timeline-card .timelineTable tbody tr td .calendarEventCard {
+  padding: 22px 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border-left: 3px solid #335CFF;
+  background: #E6F0FF;
+}
+.leaveTeamTabPage .timeline-card .timelineTable tbody tr td .calendarEventCard h6 {
+  color: #414651;
+  font-size: 12px;
+  font-weight: 700;
+}
+.leaveTeamTabPage .timeline-card .timelineTable tbody tr td .calendarEventCard p {
+  color: #414651;
+  font-size: 12px;
+}
+.leaveTeamTabPage .timeline-card .timelineTable tbody tr .date-day {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  padding-left: 20px;
+  left: 0;
+  height: 100%;
+  justify-content: center;
+}
+.leaveTeamTabPage .timeline-card .timelineTable tbody tr .date-day h6 {
+  color: #222530;
+  font-size: 14px;
+  font-weight: 500;
+}
+.leaveTeamTabPage .timeline-card .timelineTable tbody tr .date-day p {
+  color: #222530;
+  font-size: 12px;
+  font-weight: 500;
+}
+.leaveTeamTabPage .mainCalenderSec .leaveCalenderTable {
+  width: 100%;
+}
+.leaveTeamTabPage .mainCalenderSec .leaveCalenderTable td, .leaveTeamTabPage .mainCalenderSec .leaveCalenderTable th {
+  width: 14.2857142857%;
+}
+.leaveTeamTabPage .mainCalenderSec .leaveCalenderTable thead tr th {
+  padding: 14px;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  border-right: 1px solid #FFF;
+  border-left: 1px solid #FFF;
+  background: #333;
+}
+.leaveTeamTabPage .mainCalenderSec .leaveCalenderTable tbody tr td {
+  padding: 25px 15px;
+  border: 1px solid #D5D7DA;
+  background: #FFF;
+}
+.leaveTeamTabPage .mainCalenderSec .leaveCalenderTable tbody tr td.holiday {
+  background: #FFF7E5;
+}
+.leaveTeamTabPage .mainCalenderSec .leaveCalenderTable tbody tr td .cellMainCont {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.leaveTeamTabPage .mainCalenderSec .leaveCalenderTable tbody tr td .cellMainCont .date {
+  color: #717680;
+  font-size: 12px;
+  font-weight: 500;
+}
+.leaveTeamTabPage .mainCalenderSec .leaveCalenderTable tbody tr td .cellMainCont .cellCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 22px 17px;
+  width: 100%;
+  border-radius: 5px;
+  border-left: 3px solid #335CFF;
+  background: #F5F7FA;
+}
+.leaveTeamTabPage .mainCalenderSec .leaveCalenderTable tbody tr td .cellMainCont .cellCard h6 {
+  color: #414651;
+  font-size: 12px;
+  font-weight: 700;
+}
+.leaveTeamTabPage .mainCalenderSec .leaveCalenderTable tbody tr td .cellMainCont .cellCard p {
+  color: #414651;
+  font-size: 12px;
+}
+
+.leaveMainPage {
+  padding: 24px;
+  height: calc(100vh - 120px);
+  overflow: auto;
+}
+
+.leaveBalanceCont {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.leaveBalanceCont .leaveBalanceCard {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #E1E4E9;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.leaveBalanceCont .leaveBalanceCard .leftSec {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.leaveBalanceCont .leaveBalanceCard .leftSec .logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  border: 1px solid #F7B00B;
+  background: #FDEFD5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leaveBalanceCont .leaveBalanceCard .leftSec .logo.blue {
+  border: 1px solid #5895FF;
+  background: #DEEAFF;
+}
+.leaveBalanceCont .leaveBalanceCard .leftSec .logo.blue svg {
+  color: #5895FF;
+}
+.leaveBalanceCont .leaveBalanceCard .leftSec .logo.sky {
+  border: 1px solid #67D8FD;
+  background: #E0F7FF;
+}
+.leaveBalanceCont .leaveBalanceCard .leftSec .logo.sky svg {
+  color: #67D8FD;
+}
+.leaveBalanceCont .leaveBalanceCard .leftSec .logo svg {
+  width: 28px;
+  height: 28px;
+  color: #F7B00B;
+}
+.leaveBalanceCont .leaveBalanceCard .leftSec h6 {
+  color: #535862;
+  font-size: 20px;
+  font-weight: 600;
+}
+.leaveBalanceCont .leaveBalanceCard .middleSec {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.leaveBalanceCont .leaveBalanceCard .middleSec .detailSec {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.leaveBalanceCont .leaveBalanceCard .middleSec .detailSec p {
+  color: #181D27;
+  font-size: 16px;
+}
+.leaveBalanceCont .leaveBalanceCard .middleSec .detailSec h6 {
+  color: #181D27;
+  font-size: 16px;
+  font-weight: 600;
+}
+.leaveBalanceCont .leaveBalanceCard .middleSec .detailSec h6 span {
+  color: #2EB67D;
+}
+.leaveBalanceCont .leaveBalanceCard .rightSec .applyCard {
+  cursor: pointer;
+  min-width: 195px;
+  border-radius: 10px;
+  background: #335CFF;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shiftDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.shiftDetail .filterSec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shiftDetail .filterSec .leftSec {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.shiftDetail .filterSec .leftSec .imgHirarchi {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.shiftDetail .filterSec .leftSec .imgHirarchi .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.shiftDetail .filterSec .leftSec .imgHirarchi .avatar img {
+  width: 100%;
+  height: 100%;
+}
+.shiftDetail .filterSec .leftSec h6 {
+  color: #181D27;
+  font-size: 20px;
+  font-weight: 600;
+}
+.shiftDetail .filterSec .rightSec {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.shiftDetail .filterSec .rightSec .filterTabing {
+  padding: 4px;
+  border-radius: 10px;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.shiftDetail .filterSec .rightSec .filterTabing .tab {
+  min-width: 155px;
+  padding: 6px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  font-size: 14px;
+  font-weight: 500;
+  color: #99A0AE;
+}
+.shiftDetail .filterSec .rightSec .filterTabing .tab:hover, .shiftDetail .filterSec .rightSec .filterTabing .tab.active {
+  background: #335CFF;
+  color: #FFF;
+  box-shadow: 0px 6px 10px 0px rgba(14, 18, 27, 0.06), 0px 2px 4px 0px rgba(14, 18, 27, 0.03);
+}
+.shiftDetail .filterSec .rightSec .filterBtn {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #E1E4EA;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  color: #525866;
+}
+.shiftDetail .filterSec .rightSec .filterBtn:hover {
+  background: #f5f5f5;
+}
+.shiftDetail .filterSec .rightSec .filterBtn p {
+  color: #525866;
+  font-size: 14px;
+  font-weight: 500;
+}
+.shiftDetail .filterSec .rightSec .filterDropdown {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #E1E4EA;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #99A0AE;
+}
+.shiftDetail .filterSec .rightSec .filterDropdown p {
+  color: #525866;
+  font-size: 14px;
+}
+.shiftDetail .shiftDetailMainSec {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.org-chart-container {
+  height: calc(100vh - 112px);
+  overflow: auto;
+  padding: 24px 0;
+}
+.org-chart-container .org-node {
+  display: flex;
+  align-items: flex-start;
+}
+.org-chart-container .org-node .node-card {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 12px;
+  border: 1px solid #99A0AE;
+  background: #FFF;
+  position: relative;
+  width: 310px;
+  margin-right: 65px;
+  cursor: pointer;
+}
+.org-chart-container .org-node .node-card .avatar {
+  position: relative;
+}
+.org-chart-container .org-node .node-card .avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.org-chart-container .org-node .node-card .avatar .online {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid #FFF;
+  background: #17B26A;
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+}
+.org-chart-container .org-node .node-card .info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.org-chart-container .org-node .node-card .info .name {
+  color: #0E121B;
+  font-size: 14px;
+  font-weight: 500;
+}
+.org-chart-container .org-node .node-card .info .title {
+  color: #525866;
+  font-size: 14px;
+}
+.org-chart-container .org-node .node-card .connector {
+  position: absolute;
+  height: 1px;
+  background-color: #99A0AE;
+  width: 65px;
+  left: -65px;
+}
+.org-chart-container .org-node .node-card .connector.vertical {
+  width: 1px;
+  height: 139px;
+  left: -30px;
+  bottom: 46px;
+}
+.org-chart-container .org-node .children-container {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}/*# sourceMappingURL=style2.css.map */

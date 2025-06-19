@@ -1,0 +1,114 @@
+.favorites-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.favorites-card__top {
+  width: 100%;
+}
+.favorites-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.favorites-card__title {
+  color: var(--Gray-900, #181D27);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.favorites-card__dots {
+  color: #A4A7AE;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  padding: 3px 5px;
+  border-radius: 2px;
+}
+.favorites-card__dots:hover {
+  background-color: #f9f9f9;
+}
+.favorites-card__list {
+  border-top: 2px solid #f4f4f5;
+  margin: 7px 0 0 0;
+  height: 340px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.favorites-card__row {
+  display: flex;
+  align-items: center;
+  padding: 15px 4px 13px 0;
+  border-bottom: 1px solid #efeff0;
+  transition: box-shadow 0.13s, border-color 0.13s;
+}
+.favorites-card__row:last-child {
+  border-bottom: none;
+}
+.favorites-card__avatar {
+  min-width: 46px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 18px;
+  background: #f2f5f8;
+}
+.favorites-card__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.favorites-card__name {
+  color: var(--Gray-900, #181D27);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.favorites-card__username {
+  color: var(--Gray-600, #535862);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.favorites-card__likes {
+  width: 60px;
+  color: var(--Gray-600, #535862);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-right: 18px;
+}
+.favorites-card__icon {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #A4A7AE;
+}
+.favorites-card__icon svg {
+  display: block;
+  width: 1em;
+  strokeWidth: 4px;
+}
+.favorites-card__footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 7px;
+}
+.favorites-card__viewall {
+  color: #6941C6;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+@media (max-width: 600px) {
+  .favorites-card {
+    padding: 14px 7px 10px 7px;
+    min-width: 97vw;
+  }
+}/*# sourceMappingURL=FavoritesCard.css.map */

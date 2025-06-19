@@ -1,0 +1,206 @@
+.pending-taskcard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.pending-task__header-row {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pending-task__header {
+  color: var(--Gray-900, #181D27);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding-bottom: 3px;
+}
+
+.pending-task__sub {
+  color: var(--Gray-600, #535862);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.pending-task__sub--red {
+  color: #FB3748;
+  font-weight: 600;
+}
+
+.pending-task__dots {
+  color: #A4A7AE;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  padding: 3px 5px;
+  border-radius: 2px;
+}
+.pending-task__dots:hover {
+  background-color: #f9f9f9;
+}
+
+.pending-task__taskcards {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+}
+
+.pending-task__taskcard {
+  background: #f7fafd;
+  border-radius: 11px;
+  flex: 1;
+  min-width: 260px;
+  padding: 18px 22px 16px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.pending-task__taskcard-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.pending-task__tasktitle {
+  color: var(--text-strong-950, #0E121B);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.108px;
+  padding-bottom: 5px;
+}
+
+.pending-task__taskdesc {
+  color: var(--text-strong-950, #0E121B);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.084px;
+}
+
+.pending-task__taskcard-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.pending-task__downArrow {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  transition: background 0.13s;
+  background: var(--bg-white-0, #FFF);
+  outline: none;
+  border: none;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+  font-size: 18px;
+  padding: 3px 2px 2px 2px;
+}
+.pending-task__downArrow svg {
+  width: 1.2em;
+  height: auto;
+}
+.pending-task__downArrow:hover {
+  background: #e6e8ef;
+}
+
+.pending-task__chip {
+  border-radius: var(--radius-full, 999px);
+  border: 1px solid var(--state-away-base, #F6B51E);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 6px 0px 4px;
+  gap: 2px;
+  color: var(--state-away-base, #F6B51E);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 100%;
+}
+.pending-task__chip .pending-task__chipicon {
+  font-size: 1.1em;
+}
+.pending-task__chip .pending-task__chipicon svg {
+  width: 1.1em;
+  height: auto;
+}
+
+.pending-task__avatars {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+
+.pending-task__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: -10px;
+  border: 2px solid #fff;
+  background: #f5f5f5;
+}
+.pending-task__avatar:first-child {
+  margin-left: 0;
+}
+
+.pending-task__avatar-more {
+  margin-left: -10px;
+  width: 30px;
+  height: 30px;
+  color: #717680;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200px;
+  border: 0.75px solid var(--Gray-200, #E9EAEB);
+  background: var(--Gray-100, #F5F5F5);
+  box-shadow: 0px 0px 0px 1.5px #FFF;
+}
+
+.pending-task__viewall {
+  color: var(--Gray-700, #414651);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-300, #D5D7DA);
+  background: var(--Base-White, #FFF);
+  cursor: pointer;
+  /* Shadows/shadow-xs-skeuomorphic */
+  box-shadow: 0px 0px 0px 1px rgba(10, 13, 18, 0.02) inset, 0px -2px 0px 0px rgba(10, 13, 18, 0.05) inset, 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  display: inline-flex;
+  padding: 10px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  transition: border 0.14s;
+}
+.pending-task__viewall:hover {
+  border-color: #c2bef6;
+  color: #6a56cd;
+}
+
+@media (max-width: 800px) {
+  .pending-task__taskcards {
+    flex-direction: column;
+    gap: 16px;
+  }
+}/*# sourceMappingURL=PendingTaskStatus.css.map */

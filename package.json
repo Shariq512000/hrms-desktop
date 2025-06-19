@@ -1,0 +1,74 @@
+{
+  "name": "portal-new-react",
+  "version": "1.0.3",
+  "description": "My React app wrapped with Electron",
+  "author": "Shariq Siddiqui",
+  "main": "public/electron.js",
+  "homepage": "./",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shariq512000/hrms-desktop"
+  },
+  "build": {
+    "appId": "com.example.electronapp",
+    "productName": "My Hrms",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "build/**/*",
+      "public/electron.js"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "public/favicon.ico"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "Shariq512000",
+      "repo": "hrms-desktop"
+    }
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "electron": "electron .",
+    "dist": "npm run build && electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "electron-updater": "^6.6.2",
+    "node-machine-id": "^1.1.12",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-helmet": "^6.1.0",
+    "react-router": "^7.6.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

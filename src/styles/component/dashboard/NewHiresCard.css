@@ -1,0 +1,148 @@
+.nh-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+.nh-card__top {
+  width: 100%;
+}
+.nh-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nh-card__title {
+  color: var(--Gray-900, #181D27);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.nh-card__dots {
+  color: #A4A7AE;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  padding: 3px 5px;
+  border-radius: 2px;
+}
+.nh-card__dots:hover {
+  background-color: #f9f9f9;
+}
+.nh-card__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 38px;
+  margin: 24px 0 36px 0;
+}
+.nh-card__grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.nh-card__personCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.nh-card__person {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.nh-card__avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2.5px solid #fff;
+  box-shadow: 0 1px 6px rgba(23, 57, 116, 0.0705882353);
+}
+.nh-card__name {
+  color: var(--Gray-900, #181D27);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.nh-card__role {
+  color: var(--Gray-600, #535862);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.nh-card__dept {
+  border-radius: 6px;
+  border: 1px solid var(--Gray-300, #D5D7DA);
+  background: var(--Base-White, #FFF);
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  display: inline-flex;
+  padding: 2px 8px;
+  align-items: center;
+  gap: 6px;
+  color: var(--Gray-700, #414651);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.nh-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.nh-card__avatars {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-left: 2px;
+}
+.nh-card__footer-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: -10px;
+  border: 2px solid #fff;
+  background: #f5f5f5;
+}
+.nh-card__more {
+  margin-left: -10px;
+  width: 32px;
+  height: 32px;
+  color: #717680;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200px;
+  border: 0.75px solid var(--Gray-200, #E9EAEB);
+  background: var(--Gray-100, #F5F5F5);
+  box-shadow: 0px 0px 0px 1.5px #FFF;
+}
+.nh-card__viewall {
+  color: #6941C6;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+@media (max-width: 600px) {
+  .nh-card {
+    padding: 16px 7px 12px 7px;
+    min-width: 98vw;
+  }
+  .nh-card__grid {
+    gap: 12px;
+  }
+  .nh-card__person {
+    gap: 9px;
+  }
+}/*# sourceMappingURL=NewHiresCard.css.map */

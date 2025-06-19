@@ -1,0 +1,129 @@
+.ee-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.ee-card__header-row {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ee-card__title {
+    color: var(--Gray-900, #181D27);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding-bottom: 3px;
+}
+
+.ee-card__dots {
+    color: #A4A7AE;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    padding: 3px 5px;
+    border-radius: 2px;
+
+    &:hover {
+        background-color: #f9f9f9;
+    }
+}
+
+.ee-card__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.ee-card__item {
+    position: relative;
+    display: flex;
+    padding: 13px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    align-self: stretch;
+    border-radius: var(--radius-12, 12px);
+    background: var(--bg-weak-50, #F5F7FA);
+}
+
+.ee-card__item-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ee-card__item-title {
+    color: var(--text-strong-950, #0E121B);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.096px;
+    padding-bottom: 5px;
+}
+
+.ee-card__item-schedule {
+    color: var(--text-sub-600, #525866);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.ee-card__item-venue {
+    color: var(--text-sub-600, #525866);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.33;
+}
+
+.ee-card__tag {
+    display: flex;
+    padding: 2px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    border-radius: var(--radius-full, 999px);
+    background: var(--state-warning-light, #FFD5C0);
+    color: var(--state-warning-dark, #682F12);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.33;
+}
+
+.ee-card__dropdown {
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.13s;
+    background: var(--bg-white-0, #FFF);
+    outline: none;
+    border: none;
+    box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+    font-size: 18px;
+    padding: 3px 2px 2px 2px;
+
+    svg {
+        width: 1.2em;
+        height: auto;
+    }
+
+    &:hover {
+        background: #e6e8ef;
+    }
+}

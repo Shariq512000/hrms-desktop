@@ -1,0 +1,17 @@
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    padding: 25px 25px;
+    height: calc(100% - 0px);
+    overflow: hidden;
+    overflow-y: auto;
+    .card {
+        grid-column: span 2;
+
+        &.pending-taskcard,
+        &.ee-card {
+            grid-column: span 3;
+        }
+    }
+}
