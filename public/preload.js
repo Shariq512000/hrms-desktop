@@ -7,5 +7,6 @@ contextBridge.exposeInMainWorld('electronAPI', {
   onUpdateAvailable: (cb) => ipcRenderer.on('update_available', cb),
   onUpdateDownloaded: (cb) => ipcRenderer.on('update_downloaded', cb),
   getAppVersion: () => ipcRenderer.invoke('get-app-version'),
-  quitAndInstall: () => ipcRenderer.invoke('quit-and-install')
+  quitAndInstall: () => ipcRenderer.invoke('quit-and-install'),
+  getIdleTime: () => ipcRenderer.invoke('get-idle-time')
 });

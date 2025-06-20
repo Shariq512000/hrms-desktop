@@ -77,13 +77,15 @@
 
 
 
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow, ipcMain, powerMonitor, Tray, Menu } = require('electron');
 const path = require('path');
 const getDeviceFingerprint = require('./getFingerprint');
 const os = require('os');
 const { autoUpdater } = require('electron-updater');
+// const AutoLaunch = require('electron-auto-launch'); // ✅ Import
 
 let mainWindow;
+let tray = null;
 
 function createWindow() {
   mainWindow = new BrowserWindow({
@@ -98,15 +100,49 @@ function createWindow() {
     }
   });
 
-  mainWindow.loadFile(path.join(__dirname, '../build/index.html'));
+  mainWindow.loadFile(path.join(__dirname, '../build/index.html')); // For Prod
+  // mainWindow.loadURL('http://localhost:3000'); // For Dev
   mainWindow.webContents.on('did-finish-load', () => {
     autoUpdater.checkForUpdatesAndNotify();
+  });
+  mainWindow.on('close', (event) => {
+    event.preventDefault(); // ❗️Block close
+    mainWindow.hide();      // ✅ Hide to tray instead
   });
   // mainWindow.webContents.openDevTools();
 }
 
 app.whenReady().then(() => {
+
+  // const autoLauncher = new AutoLaunch({
+  //   name: 'MyElectronApp',
+  //   path: process.execPath,
+  // });
+
+  // autoLauncher.isEnabled().then((isEnabled) => {
+  //   if (!isEnabled) autoLauncher.enable();
+  // });
+
+  // createWindow();
+
+  app.setLoginItemSettings({
+    openAtLogin: true,
+    path: app.getPath('exe'),
+    args: ['--hidden'], // optional flag to indicate silent startup
+  });
+
   createWindow();
+
+  // ✅ Check if app started with '--hidden' flag (e.g., from auto-start)
+  // const isAutoLaunch = process.argv.includes('--hidden');
+
+  // if (!isAutoLaunch) {
+  //   createWindow(); // Normal startup, show window
+  // } else {
+  //   // Auto-started: do not show window
+  //   // background tasks like idle check or tray continue working
+  //   console.log('App started silently on boot.');
+  // }
 
   ipcMain.handle('get-fingerprint', async () => {
     return getDeviceFingerprint();
@@ -135,6 +171,20 @@ app.whenReady().then(() => {
   ipcMain.handle('quit-and-install', () => {
     autoUpdater.quitAndInstall();
   });
+
+  ipcMain.handle('get-idle-time', () => {
+    return powerMonitor.getSystemIdleTime(); // return idle time in seconds
+  });
+
+  tray = new Tray(path.join(__dirname, './calander/avatar1-0.png')); // Use your tray icon
+  const trayMenu = Menu.buildFromTemplate([
+    { label: 'Show App', click: () => mainWindow.show() },
+    // { label: 'Quit', click: () => {
+    //   app.quit();
+    // }},
+  ]);
+  tray.setToolTip('Idle Checker App');
+  tray.setContextMenu(trayMenu);
 });
 
 autoUpdater.on('update-available', () => {
@@ -147,6 +197,10 @@ autoUpdater.on('update-downloaded', () => {
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit();
+});
+
+app.on('before-quit', (e) => {
+  e.preventDefault(); // Prevent app from quitting via keyboard
 });
 
 app.on('activate', () => {
